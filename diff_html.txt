@@ -1,0 +1,120 @@
+--- scratch
++++ user
+@@ -73,7 +73,7 @@
+             <p style="font-size: 0.8rem; color: var(--secondary-saffron); font-weight: 700; margin-top:3px;">
+               <i class="fas fa-phone-alt"></i> 99600 33258
+             </p>
+-            <span class="tag">कार्यप्रमुख</span>
++            <span class="tag">जिल्हाप्रमुख</span>
+           </div>
+         </div>
+         <!-- स्वप्नील सोमवंशी -->
+@@ -85,7 +85,7 @@
+             <p style="font-size: 0.8rem; color: var(--secondary-saffron); font-weight: 700; margin-top:3px;">
+               <i class="fas fa-phone-alt"></i> 98332 68074
+             </p>
+-            <span class="tag" style="background: #1e3a8a;">सहकार्यकर्ते</span>
++            <span class="tag" style="background: #1e3a8a;">तालुकाप्रमुख</span>
+           </div>
+         </div>
+       </div>
+@@ -237,79 +237,6 @@
+     <div class="section-header">
+       <div class="section-title">
+         <i class="fas fa-list-ol"></i>
+-        <h3>जून २०२६ लाभार्थी तपशीलवार यादी</h3>
+-      </div>
+-      <div class="btn-group">
+-        <button class="btn btn-success" id="btn-export-csv">
+-          <i class="fas fa-file-excel"></i> Excel डाउनलोड
+-        </button>
+-        <button class="btn btn-primary" id="btn-print">
+-          <i class="fas fa-print"></i> PDF प्रिंट
+-        </button>
+-      </div>
+-    </div>
+-
+-    <div class="table-card">
+-      <!-- Filter Bar -->
+-      <div class="filter-bar">
+-        <!-- Search Input -->
+-        <div class="search-input-wrapper">
+-          <i class="fas fa-search"></i>
+-          <input type="text" id="search-beneficiary" placeholder="रुग्णाचे नाव / रुग्णालय / आजार शोधा...">
+-        </div>
+-        
+-        <!-- District Dropdown -->
+-        <div class="select-wrapper">
+-          <select id="filter-district">
+-            <option value="">जिल्हा: सर्व</option>
+-          </select>
+-        </div>
+-
+-        <!-- Scheme Dropdown -->
+-        <div class="select-wrapper">
+-          <select id="filter-scheme">
+-            <option value="">मदत प्रकार: सर्व</option>
+-          </select>
+-        </div>
+-
+-        <!-- Disease Dropdown -->
+-        <div class="select-wrapper">
+-          <select id="filter-disease">
+-            <option value="">आजार: सर्व</option>
+-          </select>
+-        </div>
+-        
+-        <span id="filtered-count" style="font-weight: 700; color: var(--primary-navy);">एकूण: 0 रुग्ण</span>
+-      </div>
+-
+-      <!-- Scrollable Table -->
+-      <div class="table-wrapper">
+-        <table>
+-          <thead>
+-            <tr>
+-              <th>अ.क्र.</th>
+-              <th class="sortable" data-col="name">रुग्णाचे नाव <i class="fas fa-sort"></i></th>
+-              <th class="sortable" data-col="district">जिल्हा <i class="fas fa-sort"></i></th>
+-              <th class="sortable" data-col="scheme">मदत योजना/मार्ग <i class="fas fa-sort"></i></th>
+-              <th class="sortable" data-col="disease">आजार / शस्त्रक्रिया <i class="fas fa-sort"></i></th>
+-              <th>रुग्णालय <i class="fas fa-sort"></i></th>
+-              <th>स्थिती</th>
+-              <th class="sortable" data-col="amount" style="text-align: right;">मंजूर रक्कम (₹) <i class="fas fa-sort"></i></th>
+-            </tr>
+-          </thead>
+-          <tbody id="beneficiary-table-body">
+-            <!-- Table data dynamic injection -->
+-          </tbody>
+-        </table>
+-      </div>
+-      
+-      <!-- Table Footer / Count summary -->
+-      <div class="table-footer">
+-        <span>* टीप: सदर माहिती शिवसेना वैद्यकीय मदत कक्षाच्या अधिकृत रेकॉर्डवरून घेण्यात आली आहे.</span>
+-        <strong id="filtered-total" style="font-size: 1rem; color: var(--primary-saffron)">एकूण मदत रक्कम: ₹0/-</strong>
+-      </div>
+-    </div>
+-  </section>
+ 
+   <!-- Photo Gallery Section -->
+   <section style="background-color: #F8FAFC;">
+@@ -383,18 +310,7 @@
+     <!-- Location Google Map Placeholder (Styled Premium) -->
+     <div style="margin-top: 40px; background: var(--white); border-radius: 16px; border: 1px solid var(--border-gray); padding: 15px; box-shadow: var(--shadow-sm); overflow: hidden;">
+       <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+-        <i class="fas fa-map-marker-alt" style="color: var(--primary-saffron);"></i> मुख्य कार्यालय: अहिल्यानगर दक्षिण
+-      </h4>
+-      <div style="width: 100%; height: 300px; border-radius: 10px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: var(--text-light); flex-direction: column; gap: 10px;">
+-        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary-navy);"></i>
+-        <span style="font-weight: 600;">शिवसेना कार्यालय, अहमदनगर (अहिल्यानगर), महाराष्ट्र</span>
+-        <a href="https://maps.google.com/?q=Shivsena+Office+Ahmednagar" target="_blank" class="btn btn-primary" style="margin-top: 10px;">
+-          <i class="fas fa-directions"></i> गुगल मॅपवर दिशा मिळवा
+-        </a>
+-      </div>
+-    </div>
+-  </section>
+-
++        
+   <!-- Footer Section -->
+   <footer>
+     <div class="container">

@@ -1158,3 +1158,228 @@ footer .footer-tagline {
     background-color: #EEE !important;
   }
 }
+
+/* Grand Total Banner Styles */
+.grand-total-banner {
+  background: linear-gradient(90deg, var(--primary-navy) 0%, #1e3a8a 100%);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.grand-total-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.grand-total-icon {
+  font-size: 2rem;
+  color: var(--accent-gold);
+}
+
+.grand-total-text h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.grand-total-text p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 2px 0 0 0;
+}
+
+.grand-total-banner #stat-grand-total {
+  color: var(--accent-gold);
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+/* --- Mobile & Tablet Optimization Styles --- */
+
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .hero-leader-profile {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header navigation alignment and size adjustment */
+  .top-nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 10px;
+    text-align: center;
+  }
+  
+  .nav-left {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .nav-left img.logo-img {
+    height: 50px;
+  }
+  
+  .nav-left h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  .nav-left span {
+    font-size: 0.8rem;
+  }
+  
+  .nav-right {
+    justify-content: center;
+  }
+  
+  .nav-right img.founders-img {
+    height: 45px;
+  }
+  
+  /* Leader strip row size adjustment */
+  .leader-strip {
+    padding: 6px 0;
+  }
+  
+  .leader-strip img {
+    height: 50px;
+  }
+  
+  /* Hero Section fonts */
+  .hero-section {
+    padding: 40px 0 30px 0;
+  }
+  
+  .hero-content h3 {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+  }
+  
+  .hero-content p.motto {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-leader-profile {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Section Header layout */
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title h3 {
+    font-size: 1.35rem;
+  }
+  
+  /* Grand Total Banner responsiveness */
+  .grand-total-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .grand-total-content {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .grand-total-banner #stat-grand-total {
+    font-size: 1.8rem;
+  }
+  
+  /* Table Filters responsiveness */
+  .filter-bar {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .btn-group {
+    width: 100%;
+  }
+  
+  .btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    margin-top: -20px;
+  }
+  
+  .stat-card {
+    padding: 16px;
+    gap: 15px;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Contact section layout */
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+  
+  .contact-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    width: 100%;
+  }
+  
+  .contact-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .btn-contact {
+    width: 100%;
+  }
+  
+  /* Badge styling in Hero */
+  .badge-group {
+    justify-content: center;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
